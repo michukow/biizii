@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Biizii - Najczęściej zadawane pytania (FAQ)</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    body, p { font-family: 'Ubuntu', Arial, sans-serif; color: #ffffff; }
+    h1, h2, h3 { font-family: 'Oswald', Arial, sans-serif; color: #62ce70; }
+    .title { font-family: 'Oswald', Arial, sans-serif; font-size: 28px; font-weight: bold; }
+    .subtitle { font-family: 'Oswald', Arial, sans-serif; font-size: 20px; color: #62ce70; }
+    .button {
+      background-color: #62ce70;
+      color: #ffffff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+      font-family: 'Ubuntu', Arial, sans-serif;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .faq-item {
+      background-color: #333333;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+    .faq-question {
+      padding: 15px 20px;
+      background-color: #3a3a3a;
+      cursor: pointer;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-answer {
+      padding: 15px 20px;
+      display: none;
+    }
+    .faq-answer.active {
+      display: block;
+    }
+    .social-icons img {
+      width: 24px;
+      margin: 0 8px;
+    }
+    .header-logo {
+      width: 150px;
+      margin: 20px 0;
+    }
+    .footer {
+      margin-top: 30px;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #888888;
+    }
+  </style>
+</head>
+<body style="background-color:#2a2a2a; margin:0; padding:0;">
+  <div style="width:100%; background-color:#2a2a2a; text-align:center;">
+    <img src="https://roweromate.pl/wp-content/uploads/2025/06/Zrzut-ekranu-2025-06-18-164129-png.avif" alt="Biizii" class="header-logo">
+
+    <div class="faq-container">
+      <h1 class="title">Najczęściej zadawane pytania (FAQ)</h1>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>Jak mogę założyć konto w Biizii?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Założenie konta jest proste! Kliknij przycisk "Zarejestruj się" w prawym górnym rogu strony głównej i postępuj zgodnie z instrukcjami. Wymagane będą podstawowe dane kontaktowe.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>Jakie są koszty korzystania z platformy?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Podstawowe funkcje Biizii są całkowicie darmowe. Oferujemy również pakiety premium z dodatkowymi funkcjonalnościami, które można aktywować w ustawieniach konta.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>Jak mogę zmienić hasło do mojego konta?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Po zalogowaniu przejdź do ustawień konta (ikona profilu w prawym górnym rogu), wybierz opcję "Zmień hasło" i postępuj zgodnie z instrukcjami.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>Jak działa system bezpieczeństwa płatności?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Wszystkie transakcje są chronione zaawansowanym szyfrowaniem SSL. Dane kart płatniczych są przetwarzane przez certyfikowanego partnera płatniczego i nie są przechowywane na naszych serwerach.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+          <span>Jak mogę skontaktować się z obsługą klienta?</span>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Nasz zespół obsługi klienta jest dostępny pod adresem email: <a href="mailto:kontakt@biizii.com" style="color:#62ce70;">kontakt@biizii.com</a> lub poprzez formularz kontaktowy w sekcji "Pomoc".</p>
+        </div>
+      </div>
+      
+      <div style="text-align:center; margin-top:30px;">
+        <a href="https://www.biizii.pl" class="button" target="_blank">Powrót do strony głównej</a>
+      </div>
+    </div>
+    
+    <div style="padding:20px; text-align:center; background-color:#2a2a2a;">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61566410743209" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com/company/biizii/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer">
+      © 2025 Biizii. Wszelkie prawa zastrzeżone.
+    </div>
+  </div>
+
+  <script>
+    function toggleAnswer(element) {
+      const answer = element.nextElementSibling;
+      const icon = element.querySelector('span:last-child');
+      
+      if (answer.classList.contains('active')) {
+        answer.classList.remove('active');
+        icon.textContent = '+';
+      } else {
+        answer.classList.add('active');
+        icon.textContent = '-';
+      }
+    }
+  </script>
+</body>
+</html>
